@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Zhenry\Lsearch\Searchable;
+
+class DummyClass extends Searchable
+{
+    // 
+}

@@ -1,0 +1,28 @@
+{
+    "name": "zhenry/lsearch",
+    "license": "MIT",
+    "description": "",
+    "authors": [
+        {
+            "name": "Henry Zhang",
+            "email": "zxh_henry@163.com"
+        }
+    ],
+    "require": {
+        "php": "~7.1",
+        "illuminate/support": "5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|5.9.*"
+    },
+    "autoload": {
+        "Zhenry\\Lsearch\\": "src/"
+    },
+    "autoload-dev": {
+        "Zhenry\\Lsearch\\Test\\": "tests/"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zhenry\\Lsearch\\LsearchServiceProvider"
+            ]
+        }
+    }    
+}

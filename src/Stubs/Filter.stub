@@ -1,0 +1,21 @@
+<?php
+
+namespace DummyNamespace;
+
+use Zhenry\Lsearch\Contracts\FilterInterface;
+use Illuminate\Database\Eloquent\Builder;
+
+final class DummyClass implements FilterInterface
+{
+    /**
+     * Apply given value to the builder.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $builder
+     * @param mixed $value
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public static function apply(Builder $builder, $value): Builder
+    {
+        return $builder;
+    }
+}
