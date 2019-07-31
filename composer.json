@@ -13,10 +13,14 @@
         "illuminate/support": "5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|5.9.*"
     },
     "autoload": {
-        "Zhenry\\Lsearch\\": "src/"
+        "psr-4": {
+            "Zhenry\\Lsearch\\": "src/"
+        }
     },
     "autoload-dev": {
-        "Zhenry\\Lsearch\\Test\\": "tests/"
+        "psr-4": {
+            "Zhenry\\Lsearch\\Test\\": "tests/"
+        }
     },
     "extra": {
         "branch-alias": {
