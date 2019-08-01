@@ -37,14 +37,16 @@ class MakeSearchCommand extends GeneratorCommand
     {
         if ($this->option('searchable')) {
             return __DIR__.'/../Stubs/Searchable.stub';
-        }        
+        }
+
         return __DIR__.'/../Stubs/Filter.stub';
     }
 
     /**
      * Get the default namespace for the class.
      *
-     * @param  string  $rootNamespace
+     * @param string $rootNamespace
+     *
      * @return string
      */
     protected function getDefaultNamespace($rootNamespace)
@@ -62,5 +64,5 @@ class MakeSearchCommand extends GeneratorCommand
         return [
             ['searchable', 's', InputOption::VALUE_NONE, 'Indicates if the generated class should be a searchable class'],
         ];
-    }    
+    }
 }
